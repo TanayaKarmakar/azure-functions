@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "dev/{name}",
+      "connection": "azdemostorage89_STORAGE"
+    }
+  ]
+}
