@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "myqueue",
+      "connection": "azdemostorage89_STORAGE"
+    },
+    {
+      "name": "myInputBlob",
+      "type": "blob",
+      "path": "dev/{queueTrigger}",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    }
+  ]
+}
