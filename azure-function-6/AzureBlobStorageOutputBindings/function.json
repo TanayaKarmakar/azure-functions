@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "my-queue-items",
+      "connection": "azdemostorage89_STORAGE"
+    },
+    {
+      "name": "myOutputBlob",
+      "type": "blob",
+      "path": "dev/latestqueuemsg.txt",
+      "connection": "azdemostorage89_STORAGE",
+      "direction": "out"
+    }
+  ]
+}
